@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  width: 100vw;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.img-container {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+}
+
+.img-before,
+.img-after {
+  position: absolute;
+}
+
+.img-after {
+  width: 50%;
+  overflow: hidden;
+}
+
+.slider {
+  position: absolute;
+  left: 50%;
+  background-color: #fff;
+  width: .5rem;
+  height: 100%;
+  box-shadow: 5px 5px 20px 3px;
+  pointer-events: none;
+  z-index: 9;
+}
+
+[data-show-img] {
+  z-index: 1;
+}
